@@ -22,17 +22,9 @@ public class AccountProcessor {
 
        } catch (AccountNotExistsException | InsufficientFundException e){
            System.out.println("AccountNotExistsException occured !!!");
-
-            String message = "Exception occured while withdrwaing "+ amount + "amout from " + accountNumber +"acount";
-            throw new WithdrawFailureException(message,e);
-
+           String message = "Exception occured while withdrwaing "+ amount + "amout from " + accountNumber +"acount";
+           throw new WithdrawFailureException(message,e);
        }
-
-
-
-
-
-
     }
 
     Account getAccount (String accountNumber) throws AccountNotExistsException {
@@ -42,10 +34,6 @@ public class AccountProcessor {
             }
         }
         throw new AccountNotExistsException();
-
     }
-
-
-
 
 }
