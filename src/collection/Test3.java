@@ -9,6 +9,7 @@ public class Test3 {
 
     public static void main(String[] args) {
 
+
         /**
         Set<String> names= new TreeSet<>();
         names.add ("Anoop");
@@ -19,7 +20,7 @@ public class Test3 {
         System.out.println(names);
         **/
 
-        Set <Student> students= new TreeSet<>();
+        Set <Student> students= new HashSet<>();
         students.add(new Student("Anoop","1111", 77));
         students.add(new Student("Kumar","1111", 55));
         students.add(new Student("Praveen","1111", 66));
