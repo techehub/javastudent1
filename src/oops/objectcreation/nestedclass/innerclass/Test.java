@@ -39,8 +39,6 @@ public class Test {
         };
 
 
-
-
         Car nano = new Car(){
 
             void start (){
@@ -53,8 +51,6 @@ public class Test {
 
             }
         };
-
-
     }
 
 }
